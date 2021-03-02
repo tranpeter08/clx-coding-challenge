@@ -1,12 +1,16 @@
 function notFizzBuzz() {
+  function isMultipleOf(value, int) {
+    return value % int === 0;
+  }
+
   for (let i = 1; i <= 100; i++) {
     let output = '';
   
-    if (i % 3 === 0) {
+    if (isMultipleOf(i, 3)) {
       output += 'CLX';
     }
   
-    if (i % 5 === 0) {
+    if (isMultipleOf(i, 5)) {
       output += 'DTC';
     }
   
